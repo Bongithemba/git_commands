@@ -1,0 +1,65 @@
+@keyframes animation-background {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background: linear-gradient(300deg, #22577a, #38a3a5, #57cc99, #80ed99, #c7f9cc);
+    animation: animation-background 5s ease infinite;
+    background-size: 180% 180%;
+}
+
+header {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+h1 {
+    font-size: 50px;
+    color: black;
+    margin-top: 5px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.command {
+    text-align: center;
+    border: 2px solid red;
+    margin: 20px;
+    width: 200px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    background-color: #d9dcd6;
+    box-shadow: 5px 5px;
+}
+
+@keyframes cards {
+    0% {width: 200px;}
+    50% {width: 210px; transform: rotate(10deg);}
+    100% {width: 225px; transform: rotate(20deg);}
+}
+
+.command:hover {
+    cursor: pointer;
+    background-color: #f6bd60;
+    box-shadow: 10px 10px;
+    animation-name: cards;
+    animation-duration: 0.5s;
+}
+

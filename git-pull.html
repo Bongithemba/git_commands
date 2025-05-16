@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>git pull</title>
+    <style>
+        .example , h1, .home{
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @keyframes animation-background {
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+
+        body {
+            background: linear-gradient(300deg, #22577a, #38a3a5, #57cc99, #80ed99, #c7f9cc);
+            animation: animation-background 5s ease infinite;
+            background-size: 180% 180%;
+        }
+
+        h1 {
+            font-size: 50px;
+            line-height: 2em;
+            color: white;
+        }
+
+        .example {
+            border: 2px solid black;
+            width: 800px;
+            margin: auto;
+            background-color: black;
+            margin-bottom: 50px;
+
+        }
+
+        .explanation {
+            border: 2px solid black;
+            margin-bottom: 50px;
+            color: white;
+            background-color: black;
+        }
+
+        p {
+            line-height: 1.3rem;
+            margin-top: 0px;
+        }
+
+        a {
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="example">
+            <h1>Example</h1>
+            <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*GT4X9mQhr-KedzYiE_gqTg.png" width="80%"/>
+        </div>
+
+        <div class="explanation">
+            <h1>Explanation</h1>
+            <p>Incorporates changes from a remote repository into the current branch. If the current branch is behind the remote, then by default it will fast-forward the current branch to match the remote. If the current branch and the remote have diverged, the user needs to specify how to reconcile the divergent branches with --rebase or --no-rebase (or the corresponding configuration option in pull.rebase).
+            </p>
+        </div>
+
+        <div class="home">
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+</body>
+</html>
